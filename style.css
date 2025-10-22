@@ -1,7 +1,12 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: #f4fcf5;
+    font-family: system-ui;
 }
 
 
@@ -13,29 +18,45 @@ header {
 
 }
 
-div h3{
+div h3 {
     padding: 0 20px 0 0;
     font-size: 24px;
     font-weight: bold;
 }
-.navegation{
-   padding-right: 200px;
+
+.navegation {
+    margin: 20px;
+    padding-right: 200px;
 }
 
 
 .navegation a {
     font-size: 18px;
- 
+
     margin: 0 10px;
     text-decoration: none;
-  
+
 
 }
 
 
 img {
     border-radius: 15px;
-    
+
+}
+.link-reserva{
+    margin-top: 100px;
+    font-size: 25px;
+
+
+}
+
+.link-reserva a{
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    padding: 15px 25px;
+    border-radius: 10px;
 }
 
 .container-body {
@@ -44,12 +65,78 @@ img {
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-    margin: 0 100px;
+    margin: 20px;
     padding: 100px;
-    height: 50vh;
+    height: 80vh;
     text-align: center;
     color: rgb(10, 10, 10);
     font-family: sans-serif;
     font-size: 20px;
 
+}
+
+.container-form {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.747);
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 80vh;
+    height: 70vh;
+ 
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container-form input {
+
+    width: 80%;
+    padding: 20px ;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  
+}
+
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+legend{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq{
+    font-family: monospace;
+    font-size: 25px;
+    margin: 50px;
 }

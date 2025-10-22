@@ -3,8 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="index, follow"> <!-- metadato para google y otros buscadores -->
+    <meta name="theme-color" content="#555555"> <!-- color de la barra de navegacion en moviles -->
+    <meta name="description"
+        content="Complejo de canchas de fútbol para alquiler, torneos y eventos. Reserva tu cancha hoy y disfruta del mejor fútbol.">
     <title>Complejo de Fútbol</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- open graph -->
+    <meta property="og:title" content="Complejo de Fútbol">
+    <meta property="og:description"
+        content="Complejo de canchas de fútbol para alquiler, torneos y eventos. Reserva tu cancha hoy y disfruta del mejor fútbol.">
+    <meta property="og:image" content="https://example.com/imagen-complejo-futbol.jpg">
+
+    <!-- alternate -->
+    <link rel="alternate" href="https://example.com/es/index.html" hreflang="es-GB">
+    <link rel="canonical" href="https://example.com/es"><!-- indicamos la pagina principal -->
 </head>
 
 <header>
@@ -26,16 +42,52 @@
 
 </header>
 
-<main>
+<main> <!-- Contenido principal -->
     <section>
-
-
         <div class="container-body">
 
             <h1>Bienvenidos al Complejo de Fútbol</h1>
             <p>Disfruta de nuestras canchas de última generación y vive la pasión del fútbol con tus amigos y
                 familiares.</p>
-            <a href="#">Reserva tu cancha ahora</a>
+            <div class="link-reserva">
+                <a href="#reserva">Reserva tu cancha ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserva" class="section-form">
+
+        <div class="container-form">
+            <form method="post" action="/">
+
+                <legend>Datos de Reserva</legend>
+
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="tel" placeholder="Telefono de contacto" required>
+                <input type="date">
+
+                <button type="submit">Reservar Cancha</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="faq">
+
+            <h4>Preguntas Frecuentes</h4>
+            <details open>
+                <summary>¿Por qué reservar con nosotros?</summary>
+                <p>Nuestras canchas están equipadas con césped de alta calidad, iluminación nocturna y vestuarios
+                    modernos. Ofrecemos tarifas competitivas y promociones especiales para grupos y eventos.</p>
+            </details>
+
+
+            <details>
+                <summary>Contacto</summary>
+                <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos al
+                    +123-456-7890 o envíanos un correo info@complejodefutbol.com
+            </details>
 
         </div>
     </section>
