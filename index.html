@@ -67,6 +67,35 @@
                 <input type="tel" name="tel" placeholder="Telefono de contacto" required>
                 <input type="date">
 
+
+
+                <select name="cancha" id="cancha" required>
+                    <option value="" disabled selected>TIPO DE CANCHA</option>
+                    <option value="cancha1">CANCHA DE 5</option>
+                    <option value="cancha2">CANCHA DE 7</option>
+                    <option value="cancha3">CANCHA DE 9</option>
+                </select>
+
+
+                <div class="container-hours">
+                    <input type="radio" id="hour18" name="hour" class="hour-radio">
+                    <label for="hour18" class="hour-label">18:00</label>
+
+                    <input type="radio" id="hour19" name="hour" class="hour-radio">
+                    <label for="hour19" class="hour-label">19:00</label>
+
+                    <input type="radio" id="hour20" name="hour" class="hour-radio">
+                    <label for="hour20" class="hour-label">20:00</label>
+
+                    <input type="radio" id="hour21" name="hour" class="hour-radio">
+                    <label for="hour21" class="hour-label">21:00</label>
+
+                    <input type="radio" id="hour22" name="hour" class="hour-radio">
+                    <label for="hour22" class="hour-label">22:00</label>
+
+                    <input type="radio" id="hour23" name="hour" class="hour-radio">
+                    <label for="hour23" class="hour-label">23:00</label>
+                </div>
                 <button type="submit">Reservar Cancha</button>
             </form>
         </div>

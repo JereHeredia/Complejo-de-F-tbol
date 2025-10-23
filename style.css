@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     background-color: #f4fcf5;
@@ -44,19 +45,24 @@ img {
     border-radius: 15px;
 
 }
-.link-reserva{
+
+.link-reserva {
     margin-top: 100px;
     font-size: 25px;
 
 
 }
 
-.link-reserva a{
+.link-reserva a {
     text-decoration: none;
     color: white;
     background-color: #28a745;
     padding: 15px 25px;
     border-radius: 10px;
+}
+
+.link-reserva a:hover {
+    background-color: #218838;
 }
 
 .container-body {
@@ -86,10 +92,10 @@ img {
     background-color: #ffffff;
     border-radius: 15px;
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     width: 80vh;
-    height: 70vh;
- 
+    height: 95vh;
+
 }
 
 .container-form form {
@@ -105,12 +111,18 @@ img {
 .container-form input {
 
     width: 80%;
-    padding: 20px ;
+    padding: 0.9rem;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-  
+    font-size: 1rem;
+
+}
+
+.container-form input:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
 .section-form {
@@ -119,12 +131,14 @@ img {
     align-items: center;
     height: 100vh;
 }
-legend{
+
+legend {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    
+
 }
+
 button {
     padding: 12px 30px;
     font-size: 18px;
@@ -135,8 +149,121 @@ button {
     cursor: pointer;
 }
 
-.faq{
+button:hover {
+    background-color: #218838;
+}
+
+.faq {
     font-family: monospace;
     font-size: 25px;
     margin: 50px;
 }
+
+
+.container-hours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+/* Ocultamos los radios */
+.hour-radio {
+    display: none;
+}
+
+/* Estilo base de las etiquetas */
+.hour-label {
+    font-size: 25px;
+    color: #fff;
+    display: inline-block;
+    background-color: #caf1d3;
+    padding: 0.4rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    user-select: none;
+}
+
+/* Hover */
+.hour-label:hover {
+    background-color: #218838;
+}
+
+/* Estado seleccionado */
+.hour-radio:checked+.hour-label {
+    background-color: #218838;
+    color: #fff;
+
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+select {
+    background-color: #ffffff;
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+
+}
+
+
+
+select:hover {
+    border-color: #218838;
+}
+
+select:focus {
+
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+
+
+
+
+
+
+/* Estilos para la seccion de horarios */
+/* .container-hours{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+
+    
+}
+
+
+
+.container-hours button {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #3267f8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s
+   
+}
+.container-hours button:hover {
+    opacity: 1;
+    background-color: #254eda;
+ 
+}
+ */
